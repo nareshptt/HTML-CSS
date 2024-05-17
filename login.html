@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogIn</title>
+    <style>
+      /* Global styles */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+      }
+
+      /* Form container */
+      .signup-form {
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 30px;
+        width: 400px;
+        max-width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Form heading */
+      .signup-form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      /* Input fields */
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      /* Submit button */
+      .submit-btn {
+        display: block;
+        width: 100%;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      .submit-btn:hover {
+        background-color: #3e8e41;
+      }
+
+      /* Responsive styles */
+      @media screen and (max-width: 768px) {
+        .signup-form {
+          width: 70%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signup-form">
+      <h2>LogIn!</h2>
+      <form action="/home.html">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            placeholder="Enter name"
+            type="text"
+            id="name"
+            name="name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            placeholder="Enter Password"
+            type="password"
+            id="password"
+            name="password"
+            required
+          />
+        </div>
+        <button type="submit" class="submit-btn">LogIn</button>
+      </form>
+      <div class="login-text">
+        <br />
+        Don't have an account?
+        <a href="/signup.html">Signup</a>
+      </div>
+    </div>
+  </body>
+</html>
